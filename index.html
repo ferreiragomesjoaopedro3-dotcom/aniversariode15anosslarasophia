@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Convite Lara Sophia</title>
+    <style>
+        /* Remove espaços e garante tela cheia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Fundo preto para focar no convite */
+            overflow: hidden;
+        }
+
+        .wrapper {
+            position: relative;
+            height: 100vh;
+            display: inline-block;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        /* Hitboxes (Áreas de clique) */
+        .hitbox {
+            position: absolute;
+            /* background: rgba(255, 0, 0, 0.3); */ /* Descomente para ver as caixas */
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        /* Botão Localização (Meio) */
+        #area-local {
+            bottom: 12%;
+            left: 36%;
+            width: 28%;
+            height: 18%;
+        }
+
+        /* Botão Presente (Direita) */
+        #area-presente {
+            bottom: 12%;
+            left: 67%;
+            width: 30%;
+            height: 18%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="convitedapatroa.png" alt="Convite">
+
+        <a href="https://maps.app.goo.gl/YHVwUfdU89qD3V939" target="_blank">
+            <div id="area-local" class="hitbox"></div>
+        </a>
+
+        <a href="presentedapatroa.png" target="_blank">
+            <div id="area-presente" class="hitbox"></div>
+        </a>
+    </div>
+
+</body>
+</html>
