@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Convite Lara Sophia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('convitedapatroa.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .botao {
+            position: absolute;
+            cursor: pointer;
+            border-radius: 50%; /* Deixa a área de clique circular como o ícone */
+            /* background: rgba(255, 0, 0, 0.3); */ /* Remova o comentário para testar o local exato */
+        }
+
+        /* Ajustado para ficar exatamente sobre o círculo do Ícone de Localização */
+        #btn-localizacao {
+            bottom: 22%; 
+            left: 43.5%;
+            width: 13%;
+            height: 8%;
+        }
+
+        /* Ajustado para ficar exatamente sobre o círculo do Ícone de Presente */
+        #btn-presente {
+            bottom: 22%;
+            left: 73.5%;
+            width: 13%;
+            height: 8%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://maps.app.goo.gl/YHVwUfdU89qD3V939" target="_blank">
+            <div id="btn-localizacao" class="botao"></div>
+        </a>
+
+        <a href="presentedapatroa.png" target="_blank">
+            <div id="btn-presente" class="botao"></div>
+        </a>
+    </div>
+
+</body>
+</html>
